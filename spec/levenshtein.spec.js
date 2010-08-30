@@ -1,8 +1,7 @@
 // Tests
 var Levenshtein = require( '../lib/Levenshtein' )
 
-
-exports['test Levenshtein constructor'] = function( assert ) {
+exports['test Levenshtein correctness'] = function( assert ) {
   var l1 = new Levenshtein( 'kitten', 'sitting' )
     , l2 = new Levenshtein( 'Saturday', 'Sunday' )
 
