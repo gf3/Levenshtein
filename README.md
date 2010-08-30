@@ -2,7 +2,7 @@
 
 [Levenshtein](http://en.wikipedia.org/wiki/Levenshtein_distance) string difference in Javascript.
 
-<img src="http://img.gf3.ca/ebaf7deff448602470d45001fa4ac0e2.png" />
+<img src="http://img.gf3.ca/e62e010aa9a9e07b15ebc73529a9cd69.png" />
 
 `Levenshtein` also does some neat things like coerce to a number and string approproately. Not to mention it has specs!
 
