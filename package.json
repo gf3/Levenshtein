@@ -1,0 +1,15 @@
+{ "name" : "levenshtein"
+, "description" : "Javascript implementation of the L-diggity."
+, "author" : "Gianni Chiappetta <gianni@runlevel6.org> (http://gf3.ca)"
+, "version" : "1.0.0"
+, "main" : "./lib/levenshtein"
+, "engines" : [ "node >=0.2.0" ]
+, "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/gf3/Levenshtein.git"
+  }
+, "license" :
+  { "type" : "Public Domain"
+  , "url" : "http://github.com/gf3/Levenshtein/raw/master/UNLICENSE"
+  }
+}
