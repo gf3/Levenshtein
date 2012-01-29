@@ -4,7 +4,9 @@
 
 ![Screenshot](http://f.cl.ly/items/0E3B0c3H3z3F1A2t1437/Levenshtein.png)
 
-`Levenshtein` also does some neat things like coerce to a number and string approproately. So you can compare Levenshtein objects directly! Not to mention it has specs!
+`Levenshtein` also does some neat things like coerce to a number and string
+approproately. So you can compare Levenshtein objects directly! Not to mention
+it has specs!
 
 ## API
 
