@@ -1,6 +1,6 @@
 {
   "name": "levenshtein",
-  "version": "0.0.1",
+  "version": "1.0.2",
   "main": "lib/levenshtein.js",
   "ignore": [
     "**/.*",
