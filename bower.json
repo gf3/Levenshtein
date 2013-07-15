@@ -1,0 +1,13 @@
+{
+  "name": "levenshtein",
+  "version": "0.0.1",
+  "main": "lib/levenshtein.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
