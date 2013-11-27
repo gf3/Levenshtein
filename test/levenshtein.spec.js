@@ -21,3 +21,9 @@ exports['test Levenshtein can be coerced to a string'] = function() {
   assert.equal( l1.inspect(), new String(l1) )
 }
 
+exports['test Levenshtein matrix can be retrieved'] = function() {
+  var l1 = new Levenshtein( 'kitten', 'sitting' )
+  assert.ok( l1.getMatrix() instanceof Array )
+  assert.ok( l1.getMatrix()[0].length )
+  assert.ok( l1.getMatrix()[0] instanceof Array )
+}
