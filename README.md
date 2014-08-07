@@ -1,5 +1,9 @@
 # Levenshtein
 
+A rebound of [@gf3][github]'s [Levenshtein](https://github.com/gf3/Levenshtein), because things take time to cook and my Netflix proxy is broken.
+
+---
+
 [Levenshtein][wikipedia] string difference in Javascript.
 
 ![Screenshot][screenshot]
@@ -31,55 +35,7 @@ it has specs!
 
 ## Installation
 
-Levenshtein works in both the browser and [node.js][node].
-
-
-### Browser
-
-Simply include `levenshtein.js`:
-
-``` html
-<script src="/javascripts/levenshtein.js"></script>
-```
-
-
-### NPM
-
-Install via npm:
-
-``` sh
-npm install levenshtein
-```
-
-Or put it in your `package.json`:
-
-``` json
-{ "levenshtein": "~1.0" }
-```
-
-
-### Bower
-
-``` sh
-bower install levenshtein
-```
-
-
-### Git
-
-``` sh
-git clone git://github.com/gf3/Levenshtein.git
-```
-
-
-## License
-
-Levenshtein is [UNLICENSED][unlicense].
-
-
-## Author
-
-Written by [Gianni Chiappetta][github] &ndash; [gf3.ca][gf3]
+See [Gianni's Levenshtein](https://github.com/gf3/Levenshtein) for details, which is already on npm & bower.
 
 [gf3]: http://gf3.ca
 [github]: https://github.com/gf3

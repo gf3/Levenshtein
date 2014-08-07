@@ -1,21 +1,26 @@
 {
-  "name": "levenshtein",
-  "description": "Javascript implementation of the L-diggity.",
-  "author": "Gianni Chiappetta <gianni@runlevel6.org> (http://gf3.ca)",
-  "version": "1.0.4",
+  "name": "levenshtein-coffee",
+  "description": "Coffeescript implementation of the L-diggity.",
+  "author": "Kieran Huggins <kieran@kieran.ca> (http://kieran.ca)",
+  "version": "1.0.0",
   "main": "./lib/levenshtein",
   "engines": [
     "node >=0.2.0"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/gf3/Levenshtein.git"
+    "url": "http://github.com/kieran/Levenshtein.git"
   },
   "license": {
     "type": "Public Domain",
-    "url": "http://github.com/gf3/Levenshtein/raw/master/UNLICENSE"
+    "url": "http://github.com/kieran/Levenshtein/raw/master/UNLICENSE"
   },
   "scripts": {
-    "test": "cd test && node test"
+    "prepublish": "./node_modules/.bin/coffee -c ./lib/",
+    "test": "./node_modules/.bin/mocha --reporter list --growl --compilers coffee:coffee-script/register tests/levenshtein.coffee"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "mocha": "^1.21.4"
   }
 }
