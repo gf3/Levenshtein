@@ -2,7 +2,7 @@
   "name": "levenshtein",
   "description": "Javascript implementation of the L-diggity.",
   "author": "Gianni Chiappetta <gianni@runlevel6.org> (http://gf3.ca)",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./lib/levenshtein",
   "engines": [
     "node >=0.2.0"
