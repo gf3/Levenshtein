@@ -10,10 +10,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 * Add webpack to build library
+* Split out actual levenshtein computation into a function (`compute`)
 
 ### Changed
 
 * Convert codebase to modern ES6
+* Convert from `QUnit` to `karma`/`mocha`/`expect.js`
+
+### Removed
+
+* Removed `.inspect()` method in favour of `.toString()`
 
 ### Updated
 
