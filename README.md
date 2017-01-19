@@ -2,12 +2,6 @@
 
 [Levenshtein][wikipedia] string difference in Javascript.
 
-<img width="595" height="513" src="images/screenshot.png?raw=true" alt="Screenshot" />
-
-`Levenshtein` also does some neat things like coerce to a number and string
-appropriately. So you can compare Levenshtein objects directly! Not to mention
-it has tests!
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -23,6 +17,14 @@ it has tests!
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+<hr />
+
+<img width="595" height="513" src="images/screenshot.png?raw=true" alt="Screenshot" />
+
+`Levenshtein` also does some neat things like coerce to a number and string
+appropriately. So you can compare Levenshtein objects directly! Not to mention
+it has tests!
+
 
 ## Installation
 
@@ -37,7 +39,7 @@ Install via npm:
 npm install --save levenshtein
 ```
 
-Or put via yarn:
+Or via yarn:
 
 ``` sh
 yarn add levenshtein
@@ -78,7 +80,7 @@ Simply include `levenshtein.js`:
 
   * `matrix: Array<number>`
       - Internal representation of string differences
-  
+
   * `toString(): string`
       - Alias of: `inspect()`
 
