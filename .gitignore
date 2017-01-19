@@ -1,3 +1,5 @@
 dist/
 node_modules/
+npm-error.log
 tags
+yarn-error.log
