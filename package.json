@@ -25,8 +25,10 @@
     "doctoc": "doctoc README.md --github",
     "flow": "flow",
     "lint": "eslint ./lib",
+    "prepublish": "npm run build; cp ./declarations/levenshtein.js.flow ./dist",
     "preversion": "npm run flow && npm run lint && npm run test",
-    "test": "karma start ./karma.conf.js"
+    "test": "karma start ./karma.conf.js",
+    "version": "npm run build; cp ./declarations/levenshtein.js.flow ./dist"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",

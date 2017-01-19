@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 
 * Add webpack to build library
+* Add flow type declarations
 * Split out actual levenshtein computation into a function (`compute`)
 
 ### Changed
