@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+* UMD module format is different now (see CommonJS example in README)
 * Convert codebase to modern ES6
 * Convert from `QUnit` to `karma`/`mocha`/`expect.js`
 
