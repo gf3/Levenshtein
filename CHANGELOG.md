@@ -22,6 +22,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Update npm configuration
 * Update screenshot
 
+### Removed
+
+* Bower
+
 ## [1.0.5] - 2014-09-23
 
 *N/A*
