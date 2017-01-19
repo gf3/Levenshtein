@@ -2,31 +2,26 @@
 
 [Levenshtein][wikipedia] string difference in Javascript.
 
-![Screenshot][screenshot]
+<img width="595" height="513" src="images/screenshot.png?raw=true" alt="Screenshot" />
 
 `Levenshtein` also does some neat things like coerce to a number and string
 appropriately. So you can compare Levenshtein objects directly! Not to mention
-it has specs!
+it has tests!
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## API
+- [Levenshtein](#levenshtein)
+  - [Installation](#installation)
+    - [Node / NPM / Yarn](#node--npm--yarn)
+      - [ES6](#es6)
+      - [CommonJS](#commonjs)
+    - [Browser](#browser)
+  - [API](#api)
+  - [License](#license)
+  - [Author](#author)
 
-* `new Levenshtein( m, n )` → `Levenshtein`
-    * m ( `String` ): First string.
-    * n ( `String` ): Second string.
-    * Initialise a new Levenshtein object.
-
-* `Levenshtein#distance` → `Number`
-    * Distance between strings.
-
-* `Levenshtein#inspect()` → `String`
-    * Pretty print Levenshtein table.
-
-* `Levenshtein#toString()` → `String`
-    * Alias of: `Levenshtein#inspect()`.
-
-* `Levenshtein#valueOf()` → `Number`
-    * Alias of: `Levenshtein#distance`.
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ## Installation
@@ -34,42 +29,64 @@ it has specs!
 Levenshtein works in both the browser and [node.js][node].
 
 
+### Node / NPM / Yarn
+
+Install via npm:
+
+``` sh
+npm install --save levenshtein
+```
+
+Or put via yarn:
+
+``` sh
+yarn add levenshtein
+```
+
+
+#### ES6
+
+``` js
+import Levenshtein from 'levenshtein';
+```
+
+
+#### CommonJS
+
+``` js
+const Levenshtein = require('levenshtein').default;
+```
+
+
 ### Browser
 
 Simply include `levenshtein.js`:
 
 ``` html
-<script src="/javascripts/levenshtein.js"></script>
+<script src="levenshtein.js"></script>
 ```
 
 
-### NPM
+## API
 
-Install via npm:
+* `new Levenshtein(stringA: string, stringB: string): self`
+  * `distance: number`
+      - Distance between strings
 
-``` sh
-npm install levenshtein
-```
+  * `inspect(): string`
+      - Pretty print Levenshtein table
 
-Or put it in your `package.json`:
+  * `matrix: Array<number>`
+      - Internal representation of string differences
+  
+  * `toString(): string`
+      - Alias of: `inspect()`
 
-``` json
-{ "levenshtein": "~1.0" }
-```
+  * `valueOf(): number`
+      - Alias of: `distance`
 
-
-### Bower
-
-``` sh
-bower install levenshtein
-```
-
-
-### Git
-
-``` sh
-git clone git://github.com/gf3/Levenshtein.git
-```
+* `compute(stringA: string, stringB: string): [number, Array<number>]`
+  - Simple function to compute the distance of two strings. Returns an array with two elements; the first is the distance and the second is the computed table of string differences.
 
 
 ## License
@@ -79,12 +96,11 @@ Levenshtein is [UNLICENSED][unlicense].
 
 ## Author
 
-Written by [Gianni Chiappetta][github] &ndash; [gf3.ca][gf3]
+Written by [Gianni Chiappetta][github] &ndash; [butt.zone][gf3]
 
-[gf3]: http://gf3.ca
+[gf3]: https://butt.zone
 [github]: https://github.com/gf3
 [node]: http://nodejs.org/
-[screenshot]: http://f.cl.ly/items/3g1m0u401j0m2H2k0s2X/levenshtein.PNG
 [unlicense]: http://unlicense.org/
 [wikipedia]: http://en.wikipedia.org/wiki/Levenshtein_distance
 

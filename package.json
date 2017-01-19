@@ -22,6 +22,7 @@
   },
   "scripts": {
     "build": "webpack -p",
+    "doctoc": "doctoc README.md --github",
     "flow": "flow",
     "lint": "eslint ./lib",
     "preversion": "npm run flow && npm run lint && npm run test",

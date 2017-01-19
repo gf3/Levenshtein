@@ -17,13 +17,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 * Convert codebase to modern ES6
 * Convert from `QUnit` to `karma`/`mocha`/`expect.js`
 
-### Removed
-
-* Removed `.inspect()` method in favour of `.toString()`
-
 ### Updated
 
 * Update npm configuration
+* Update screenshot
 
 ## [1.0.5] - 2014-09-23
 
