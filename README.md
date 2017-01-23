@@ -1,4 +1,4 @@
-# Levenshtein
+# Levenshtein [![CircleCI](https://circleci.com/gh/gf3/Levenshtein.svg?style=shield)](https://circleci.com/gh/gf3/Levenshtein)
 
 [Levenshtein][wikipedia] string difference in Javascript.
 
