@@ -1,0 +1,22 @@
+declare module 'levenshtein' {
+  declare type Matrix = Array<number>;
+
+  declare function compute(stringA: string, stringB: string): [number, Matrix];
+
+  declare class Levenshtein {
+    _distance: number;
+    _matrix: Matrix;
+
+    constructor(stringA: string, stringB: string): void;
+
+    get distance(): number;
+
+    inspect(): string;
+
+    get matrix(): Matrix;
+
+    toString(): string;
+
+    valueOf(): number;
+  }
+};
