@@ -5,15 +5,16 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Levenshtein](#levenshtein)
-  - [Installation](#installation)
-    - [Node / NPM / Yarn](#node--npm--yarn)
-      - [ES6](#es6)
-      - [CommonJS](#commonjs)
-    - [Browser](#browser)
-  - [API](#api)
-  - [License](#license)
-  - [Author](#author)
+
+- [Installation](#installation)
+  - [Node / NPM / Yarn](#node--npm--yarn)
+    - [ES6](#es6)
+    - [CommonJS](#commonjs)
+  - [Browser](#browser)
+- [Example](#example)
+- [API](#api)
+- [License](#license)
+- [Author](#author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -66,6 +67,31 @@ Simply include `levenshtein.js`:
 
 ``` html
 <script src="levenshtein.js"></script>
+```
+
+
+## Example
+
+``` js
+import Levenshtein from 'levenshtein';
+
+const l1 = new Levenshtein('kitten', 'sitting');
+const l2 = new Levenshtein('symbol', 'simple');
+
+l1.distance // 3
+l2.distance // 4
+
+l1 > l2 // false
+```
+
+Or if you don't require any of the fancy features:
+
+``` js
+import { compute } from 'levenshtein';
+
+const [distance, matrix] = compute('kitten', 'sitting');
+
+distance // 3
 ```
 
 
