@@ -2,7 +2,7 @@
 
 [Levenshtein][wikipedia] string difference in Javascript.
 
-![Screenshot][screenshot]
+![Screenshot](screenshot.png)
 
 `Levenshtein` also does some neat things like coerce to a number and string
 appropriately. So you can compare Levenshtein objects directly! Not to mention
@@ -79,12 +79,11 @@ Levenshtein is [UNLICENSED][unlicense].
 
 ## Author
 
-Written by [Gianni Chiappetta][github] &ndash; [gf3.ca][gf3]
+Written by [Gianni Chiappetta][github] &ndash; [heavycorp.io][gf3]
 
-[gf3]: http://gf3.ca
+[gf3]: https://heavycorp.io
 [github]: https://github.com/gf3
 [node]: http://nodejs.org/
-[screenshot]: http://f.cl.ly/items/3g1m0u401j0m2H2k0s2X/levenshtein.PNG
 [unlicense]: http://unlicense.org/
 [wikipedia]: http://en.wikipedia.org/wiki/Levenshtein_distance
 
